@@ -11,7 +11,3 @@ module Move
   autoload_relative :Template, 'move/template'
   autoload_relative :View, 'move/view'
 end
-
-require_relative 'move/application'
-require_relative 'move/model_views'
-require_relative 'move/application'
