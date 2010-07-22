@@ -51,7 +51,7 @@ Then we're all like, "ElementView, you got a project manager?"
     /projects/5/project_manager
     ElementView(Project.find(5))[project_manager] => ElementView(Project.find(5).project_manager)
 
-Then we stop routing, as there is no more parts to the URL. We tell the Project Manager's element view to render out (and it'll use our text/html Accept header), and we have a response
+Then we stop routing, as there are no more parts to the URL. We tell the Project Manager's element view to render out (and it'll use our text/html Accept header), and we have a response to give back.
 
 Future Directions
 -----------------
