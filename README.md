@@ -10,7 +10,7 @@ The idea is this: When you "View" data on a webpage, it's actually a composite v
 
 For example: you're looking at a receipt. This is made up of Account, User, and maybe some Permission data objects (header/layout) and a Receipt object. A REST URL might look like:
 
-    /recepts/232
+    /receipts/232
     
 However, the scope of that Receipt object is implied by your current session, so we should really have the concept of an "Application" which has state, so you're really routing:
 
