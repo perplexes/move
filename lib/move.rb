@@ -1,5 +1,7 @@
-# XXX: Move to bundler
-require 'rubygems'
+require "rubygems"
+require "bundler"
+Bundler.setup
+
 require 'callsite'
 Callsite.activate_module_methods
 
