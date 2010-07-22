@@ -56,6 +56,7 @@ Then we stop routing, as there are no more parts to the URL. We tell the Project
 Future Directions
 -----------------
 * Caching: Since we have a looking-glass into what data goes into what views, we can track it using a graph database, and when the data changes, we can invalidate the right views and partial views (or as James Daniels suggested, send along a diff of the content in JSON and apply it to the site while we do a write-through).
+* MapReduce: Make a first pass through the graph and find anything that doesn't rely on order of execution, then render in parallel. As content comes in, stream to the client.
 
 Ideas
 -----
