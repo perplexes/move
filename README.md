@@ -6,7 +6,7 @@ Motivation
 ----------
 I hate controllers. *Move* directly maps your URLs and HTTP methods to your models and CRUD operations on them, plus a tiny but of fudging.
 
-The idea is this: When you "View" data on a webpage, it's actually a composite view of different, yet related, data.[1] You can think of this composite page as a directed acyclic graph of the different HTML representations as applied to those data objects, artfully arranged in a textfile.
+The idea is this: When you "View" data on a webpage, it's actually a composite view of different, yet related, data.[1][1] You can think of this composite page as a directed acyclic graph of the different HTML representations as applied to those data objects, artfully arranged in a textfile.
 
 For example: you're looking at a receipt. This is made up of Account, User, and maybe some Permission data objects (header/layout) and a Receipt object. A REST URL might look like:
 
