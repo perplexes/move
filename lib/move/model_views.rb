@@ -4,22 +4,22 @@ module Move
     end
 
     def post(request)
-      @projects.create(request.params[:project])
+      @object.create(request.params[object_name])
     end
 
     def put(request)
-      @projects.replace(request.params[:projects].map{|p| Project.create(p)})
+      @object.replace(request.params[object_name].map{|p| @object.create(p)})
     end
 
     def delete(request)
-      @projects.each(&:destroy)
+      @object.each(&:destroy)
     end
     
     private
     
     # XXX: This is obviously wrong. Needs pluralize.
     def object_name
-      @object.class.name.split('::').last.downcase + 's'
+      @object.name.split('::').last.downcase + 's'
     end
     
     def forward(id, request)
